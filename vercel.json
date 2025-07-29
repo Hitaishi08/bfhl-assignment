@@ -10,7 +10,11 @@
     {
       "src": "/bfhl",
       "methods": ["POST"],
-      "dest": "/api"
+      "dest": "/api/index.js"
+    },
+    {
+      "src": "/",
+      "status": 404
     }
   ]
 }
