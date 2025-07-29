@@ -2,25 +2,15 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/index.js",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": ["api/**/*.js"]
-      }
+      "src": "api/index.js",  
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/bfhl",
-      "methods": ["POST"],
-      "dest": "/api/index.js"
-    },
-    {
-      "src": "/(.*)",
-      "status": 404,
-      "headers": {
-        "Content-Type": "text/plain"
-      }
+      "dest": "/api/index.js",  
+      "methods": ["POST"]
     }
   ]
 }
